@@ -1,0 +1,46 @@
+.article-text {
+    text-align: center;
+    color: #785e4c;
+}
+
+.article-user {
+    font-size: 20px;
+    color: #785e4c;
+    font-weight: bold;
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 15px;
+        object-fit: cover;
+    }
+}
+
+/* 標籤 */
+.article-btn {
+    button {
+        margin-block: 30px;
+        margin-right: 15px;
+        background-color: #f8dc9a;
+        color: #785e4c;
+        border: none;
+    }
+}
+
+/* 文章標題 */
+.article-title {
+    margin-bottom: 30px;
+}
+
+/* 文章圖片 */
+.article-img {
+    max-width: 610px;
+    max-height: 315px;
+    margin: 50px auto;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

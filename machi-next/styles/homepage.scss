@@ -1,0 +1,202 @@
+// 關於我們區塊
+.about-title {
+  color: var(--primary-dark);
+}
+.lead {
+  color: var(--primary-dark);
+}
+.about-text {
+    color: var(--brown);
+}
+.about-btn {
+    color: var(--white);
+    background-color: var(--brown);
+    & :hover {
+        color: var(--white);
+        background-color: var(--primary-dark);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-btn {
+        text-align: center;
+    }
+}
+
+
+// 熱銷商品區塊
+.section-heading {
+    color: var(--primary-dark);
+}
+
+.latestnew-bgc {
+    z-index: 2;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    border: 1px solid rgba(128, 126, 126, 1);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(244, 242, 242, 0.31);
+    flex-wrap: nowrap;
+}
+
+.full-background {
+    position: relative;
+    width: 100vw;
+    background-image: url('/background-1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.full-background::before {  // 使用 ::before 确保它在内容下层
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;  // 确保不阻止底层元素的交互
+    z-index: -1;  // 保持在内容之下
+}
+
+
+
+
+// 精選產品區
+.featured-bgc {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    justify-content: center;
+}
+
+.featured-card {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    position: relative;
+    
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.card-title {
+    color: var(--primary-dark);
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+
+// 最新消息 文章區塊
+.article-section {
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;  // 确保内容在背景之上
+    // 其他内容样式
+}
+
+.article-block {
+    display: flex;
+    flex-direction:initial; // 左右並排
+    justify-content: space-around;
+    text-align: left;
+}
+
+.article-card {
+    width: 45%;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid var(--grey, #C0C0C0);
+    background: var(--white, #FFF);
+    box-shadow: 0px 5px 53.9px 0px rgba(166, 166, 166, 0.25);
+    &:hover {
+        box-shadow: 0px 5px 53.9px 0px rgba(166, 166, 166, 0.5);
+    }
+    img {
+        overflow: hidden; // 內容溢出容器會被隱藏
+        object-fit: cover;
+    }
+}
+
+.article-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.read-more{
+    width: 100px;
+}
+
+.article-title {
+    color: var(--primary-dark);
+    font-weight: bold;
+    font-size: large;
+    border-left: 5px;
+    border-left-style: solid;
+    border-left-color: var(--brown);
+    padding-left: 10px;
+    height: 50px;
+    &:hover {
+        color: var(--brown);
+    }
+
+}
+
+.article-date {
+    color: var(--primary-dark);
+}
+
+.btn-grey {
+    color: var(--white);
+    &:hover { 
+        background-color: var(--dark-grey);
+        color: var(--white);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .article-block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .article-card {
+        width: 100%;
+        margin-bottom: 10px;
+        &:hover {
+            box-shadow: 0px 5px 53.9px 0px rgba(166, 166, 166, 0.25);
+        }
+        
+    }
+}
+
+.intro img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.qa-background {
+    position: relative;
+    width: 100vw;
+    background-color: var(--primary-1);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+

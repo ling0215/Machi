@@ -1,0 +1,27 @@
+//文章分類
+.article-category {
+     display: flex;
+    flex-wrap: wrap;
+        //   flex-direction: column;
+
+    span {
+        color: #785e4c;
+    }
+}
+
+@media (max-width: 390px) {
+    .article-category-pc {
+        //   flex-direction: column;
+        display: none;
+    }
+  }
+  
+// 手機版
+  @media (min-width: 391px) {
+    .article-category-mobile {
+        //   flex-direction: column;
+        display: none;
+    }
+    
+  }
+

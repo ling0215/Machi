@@ -1,0 +1,50 @@
+.machi_footer {
+  background: #ab927d;
+}
+
+.icon-white {
+  color: white;
+}
+.highlight {
+  color: #785e4c;
+  font-weight: bold;
+}
+.divider {
+  height: 1px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.logo-machi {
+  /* MACHI */
+
+  /* position: absolute; */
+  width: 141px;
+  height: 47px;
+  left: calc(50% - 141px / 2);
+  top: calc(50% - 47px / 2);
+
+  font-family: 'Zen Tokyo Zoo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* primary-1 */
+  color: #f7f5eb;
+}
+
+/* 在footer.module.scss中添加 */
+.btn-to-top {
+  position: fixed;  // 固定位置
+  right: 20px;  // 距离右边20px
+  bottom: 20px;  // 距离底部20px
+  z-index: 1000;  // 确保按钮不被其他内容覆盖
+}
+
+/* 可选: 仅在滚动后显示按钮 */
+.btn-to-top.hidden {
+  display: none;
+}

@@ -1,0 +1,188 @@
+
+.card-body {
+  height: 140px;
+  padding: 0;
+}
+
+.link-button {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-button:focus,
+.link-button:hover,
+.link-button:active {
+  outline: none;
+  text-decoration: none;
+}
+
+.h6{
+  font-size: 18px;
+}
+
+.pay-area{
+  position: sticky;
+}
+.text-border-grey{
+  border-bottom: 1px solid #c0c0c0;  
+}
+
+.text-border-brown{
+  border-bottom: 1px solid #ab927d;  
+}
+
+.border-borwn{
+  border-bottom: 2px solid #ab927d;  
+}
+
+.cart-button {
+  width: 192px;
+  background: var(--brown, #ab927d);
+  border-radius: 3px;
+  border-style: solid;
+  border-color: var(--primary-dark, #785e4c);
+  border-width: 0.5px;
+  padding: 10px 48px 10px 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.cart-button-text {
+  color: var(--white, #ffffff);
+  text-align: left;
+
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+
+.step-button {
+  background: #c0c0c0;
+
+  width: 160px;
+  height: 48px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--primary-dark, #785e4c);
+  border-width: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  &:hover{
+    
+    background: #959595;
+  }
+}
+.step-button-text {
+  color: #ffffff;
+  text-align: left;
+  font-size:20px;
+  position: relative;
+  font-weight: bold ;
+
+}
+
+.pay-content{
+  border: 3px solid #ab927d;
+  margin-top: 48px;
+  top: 60px;
+}
+
+.pay-button {
+  background: #c0c0c0;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: var(--primary-dark, #785e4c);
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 110px;
+  height: 39px;
+  position: relative;
+
+  overflow: hidden;
+  white-space: nowrap;
+  &:hover{
+    border-width: 1px;
+  }
+}
+
+
+
+.cart-button {
+  width: 192px;
+  background: #cebbaa;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: var(--primary-dark, #785e4c);
+  border-width: 0px;
+  padding: 10px 48px 10px 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  
+  &:hover {
+    background: #b4a394;
+  }
+  .text{
+    color: var(--white, #ffffff);
+    text-align: left;
+    font-weight: bold ;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    
+  }
+}
+
+.cart-custom-bootstrap {
+  border-width: 2px;
+  border-radius: 3px;
+  border-color: #868686;
+}
+
+.custom-input:focus {
+  border-color: #ab927d;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* 添加阴影效果，可选 */
+}
+
+/* 取消 Bootstrap 的默认外框效果 */
+.custom-input:focus,
+.custom-input:active {
+  border-color: #ab927d !important; /* 用 !important 来覆盖 Bootstrap 的样式 */
+  box-shadow: none; /* 可选，取消阴影效果 */
+}
+
+.selected {
+  background-color: #f8dc9a; /* 修改为您想要的选中时的背景颜色 */
+}
+
+
+
+
+
+
+
+
+
+
+
+

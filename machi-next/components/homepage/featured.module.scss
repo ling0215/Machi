@@ -1,0 +1,25 @@
+// 產品 & 課程卡片 元件用
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  
+  &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.card-title {
+  color: var(--primary-dark);
+}
+
+.no-underline {
+  text-decoration: none;
+}
+  

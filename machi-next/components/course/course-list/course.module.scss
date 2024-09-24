@@ -1,0 +1,124 @@
+// product-card
+.cardBody {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+.cardImg {
+    object-fit: cover; 
+    width: 100%; /* 圖片寬度佔滿父元素 */
+    height: 20vh; 
+    overflow: hidden;
+}
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+}
+.badge {
+    position: relative;
+    top: 0;
+    left: 0;   
+}
+.cardText {
+    color: var(--primary-dark);
+    font-weight: bold;
+}
+.typeText {
+    color: var(--dark-grey);
+    font-weight: normal;
+}
+.currency {
+    font-weight: bold;
+    color: var(--primary-dark);
+}
+.heartIcon {
+    font-size: 30px;
+    color: var(--white);
+    position: absolute;
+    top: 0.5vh;
+    right: 0.5vw;
+}
+.cartIcon {
+    font-size: 20px;
+    color: var(--white);
+}
+.cartBtn {
+    background-color: var(--light-brown);
+    color: var(--white);
+    width: 150px;
+    height: 50px;
+    margin-top: 0.5vh;
+    border: none;
+    border-radius: 5px;
+
+    &:hover{
+    background-color: var(--brown);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+        .cardBody {
+            width: 100%;
+        }
+
+        .cardImg {
+            width: 100%; /* 圖片寬度佔滿父元素 */
+            height: auto; 
+            overflow: hidden;
+        }
+
+        .cardInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 20px;
+        }
+
+        .badge {
+            position: relative;
+            top: 0;
+            left: 0;   
+        } 
+
+        .heartIcon {
+            font-size: 30px;
+            position: absolute;
+            top: 1vh;
+            left: 52vh;
+        }
+
+        .cartIcon {
+            font-size: 20px;
+        }
+
+        .cartBtn {
+            width: 30vh;
+            height: 8vh;
+            margin-top:1vh;
+        }
+        
+    }
+
+
+// filter
+.viewtype {
+    width: 50px;
+    height: 50px;
+}
+@media screen and (max-width: 390px) {
+    .cardBody {
+        width: 100%;
+    }
+    .cardImg {
+        width: 100%; /* 圖片寬度佔滿父元素 */
+        height: 20vh; 
+        overflow: hidden;
+    }
+   }

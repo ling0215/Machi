@@ -1,0 +1,32 @@
+.link-style {
+    text-decoration: none;
+    color: #ab927d;
+}
+.image {
+    img{
+        width: 120px;
+        height: 90px;
+        object-fit: cover;
+        padding-right: 10px;
+    }
+}
+
+.image-text {
+    margin-block: 10px;
+    display: flex;
+    align-items: center;
+    p {
+        color: #ab927d;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+.latest-article{
+    height: 303px;
+}
+
+
+
+

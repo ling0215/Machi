@@ -1,0 +1,108 @@
+.message-area {
+    display: flex;
+    margin: 10px;
+    // border-bottom: 1px #785e4c solid;
+
+    h4 {
+        margin-block: 20px;
+    }
+}
+
+.message-input {
+    margin-bottom: 40px;
+}
+
+.message {
+    position: relative;
+
+    // background-color: #e8e8e8;
+    p {
+        padding: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        background: #d4d4d4b7;
+        resize: none;
+        border-style: none;
+        border-radius: 2px;
+    }
+}
+
+.btn-end {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        padding: 0px 5px 2px 5px;
+        border-style: none;
+        background-color: #ffffff00;
+        color: #78A1BB;
+    }
+}
+
+//使用者留言
+.user-message {
+    width: 100%;
+    margin: 20px;
+    margin-bottom: 0px;
+
+}
+
+.img-s {
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    span {
+        // margin-left: 10px;
+        color: #785e4c;
+        font-weight: bold;
+    }
+}
+
+.user-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.message-content {
+    min-height: 100px;
+    border-radius: 2px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #785e4c;
+    background-color: #ebebeb;
+
+    p {
+        padding: 10px;
+    }
+}
+
+.message-btn {
+    button {
+        padding: 2px 5px 2px 5px;
+        border-style: none;
+        background-color: #ffffff00;
+        color: #78A1BB;
+    }
+}
+
+.floor{
+    vertical-align: top;
+    // margin-right: 10px;
+    // margin-left: 0px;
+}
+.floor-name{
+    margin-left: 10px;
+}
+.myTextarea:focus {
+    outline: none !important;
+    border:1px solid #785e4c; /* 你想要的顏色 */
+  }

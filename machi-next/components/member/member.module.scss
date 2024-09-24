@@ -1,0 +1,161 @@
+.btn-outline-brown:hover {
+  background-color: var(--brown);
+  color: white;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+/* .form-signin {
+  max-width: 330px;
+  padding: 1rem;
+} */
+
+.notice {
+  font-size: 12px;
+}
+
+.invalid {
+  border-color: red;
+}
+
+.invalid:focus {
+  border-color: red;
+  box-shadow: 0 0 0.25rem rgba(255, 0, 0, 0.5);
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+  font-size: 12px;
+}
+.hr-sect:before,
+.hr-sect:after {
+  content: '';
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+/* login-navbar.js */
+.content-nav {
+  display: block;
+  padding: 13px 56px;
+  margin: 0 3px 10px 6px;
+  position: relative;
+  color: #785e4c;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  font-size: 20px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  border-top: 1px solid #cebeb0;;
+  border-bottom: 1px solid #cebeb0;;
+  z-index: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    background-color: #cebeb0;;
+    transition: height 0.3s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover:before, &:focus:before {
+      height: 100%;
+  }
+
+  &:hover, &:focus {
+    color: var(--primary-dark, #785e4c);
+  }
+}
+
+
+/* member-sidebar.js */
+.menu {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+}
+
+.member-sidebar {
+  text-align: start;
+  color: var(--primary-dark);
+  text-decoration: none; /* 刪除超連結底線 */
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  width: 100%;
+  transition: color 0.2s ease; /* 文字顏色變化的過渡效果 */
+
+  &:hover {
+    color: var(--brown);
+  }
+}
+
+.menu ul li {
+  border-bottom: 1px solid #E2E2E2;
+  position: relative;
+}
+
+.menu ul li:after {
+  border: solid #808080;
+  border-width: 0 2px 2px 0;
+  content: '';
+  height: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg) ;
+  transition: transform 0.2s ease; /* 箭頭轉動的過度效果 */
+  width: 10px;
+}
+
+.menu ul li:hover:after {
+  transform: translateY(-50%) translateX(10px) rotate(-45deg); 
+  /* 滑鼠懸停時水平向右移動10px，旋轉-45度(deg)，將箭頭轉為正向 */
+}
+// 手機板
+@media (max-width: 391px) {
+  // 會員資料
+  .menu {
+    width: 100% !important;
+    
+  }
+  .menu ul li:after {
+    transform: translateY(-0%) rotate(44deg) ;
+    transition: transform 0.2s ease; 
+  }
+  // 修改密碼
+  .password-container{
+    width: 75% !important;
+  }
+ .no-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+}
+

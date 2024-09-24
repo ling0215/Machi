@@ -1,0 +1,102 @@
+.link-style {
+    text-decoration: none;
+    color: #ab927d;
+}
+.image {
+    img{
+        width: 120px;
+        height: 90px;
+        object-fit: cover;
+        padding-right: 10px;
+    }
+}
+
+.image-text {
+    margin-block: 10px;
+    display: flex;
+    align-items: center;
+    p {
+        color: #ab927d;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+// .list-h {
+//     max-height: 1000px;
+    
+// }
+.more{
+    display: flex;
+    justify-content: flex-end;
+    :hover {
+        color: #785e4c;
+    }
+}
+
+.menu {
+    // position: absolute;
+    display: flex;
+    justify-content: flex-end; 
+    button{
+        padding: 2px;
+        :hover {
+            background-color:  #ab927d;
+        }
+    }
+}
+
+.dropdown-position{
+    position: absolute;
+}
+
+.dropdown-menu {
+    // width: 85px;
+    // height: 50px;
+    border: 1px solid #ab927d;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: transparent;
+    z-index: 1;
+    bottom: -50px;
+    left: -120px;
+    :hover {
+        background-color: #785e4c;
+        transition: 0.5s;
+    }
+
+    li {
+        padding: 5px;
+        color: #ab927d;
+    }
+}
+
+.link-style-m {
+    margin-block: 20px;
+}
+
+
+
+.image-m {
+    text-align: center;
+}
+@media (max-width: 390px) {
+    .article-list-pc {
+        //   flex-direction: column;
+        display: none;
+    }
+  }
+  
+// 手機版
+
+
+  @media (min-width: 391px) {
+    .article-list-mobile {
+        //   flex-direction: column;
+        display: none;
+    }
+    
+  }

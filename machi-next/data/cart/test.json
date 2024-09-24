@@ -1,0 +1,59 @@
+[{
+    "product_id": 1,
+    "product_quantity": 3,
+    "product_price": 30,
+    "prodcut_name": "花花餅",
+    "prodcut_image":"/images/cart-test/cookie1.jpg"
+  
+  },{
+    "product_id": 2,
+    "product_quantity": 4,
+    "product_price": 40,
+    "prodcut_name": "泡泡餅",
+    "prodcut_image":"/images/cart-test/cookie1.jpg"
+  
+  },{
+    "product_id": 3,
+    "product_quantity": 5,
+    "product_price": 50,
+    "prodcut_name": "毛毛餅",
+    "prodcut_image":"/images/cart-test/cookie1.jpg"
+  
+  },{
+    "calss_id": 1,
+    "class_quantity": 4,
+    "class_price": 300,
+    "class_name": "做肥皂",
+    "class_image":"/images/cart-test/cookie2.jpg"
+  },{
+    "calss_id": 2,
+    "class_quantity": 5,
+    "class_price": 200,
+    "class_name": "手做雪花餅",
+    "class_image":"/images/cart-test/cookie2.jpg"
+  },{
+    "calss_id": 3,
+    "class_quantity": 6,
+    "class_price": 888,
+    "class_name": "超派草莓課程",
+    "class_image":"/images/cart-test/cookie2.jpg"
+  },{
+  "custom_id": 1,
+  "custom_quantity": 4,
+  "custom_price": 880,
+  "custom_name": "自訂蛋糕",
+  "custom_image":"/images/cart-test/cookie2.jpg"
+},{
+    "custom_id": 2,
+    "custom_quantity": 4,
+    "custom_price": 20,
+    "custom_name": "自訂蛋糕2",
+    "custom_image":"/images/cart-test/cookie2.jpg"
+  },{
+    "custom_id": 3,
+    "custom_quantity": 4,
+    "custom_price": 20,
+    "custom_name": "自訂蛋糕3",
+    "custom_image":"/images/cart-test/cookie2.jpg"
+  }
+]

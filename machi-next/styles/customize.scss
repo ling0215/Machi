@@ -1,0 +1,358 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+// index
+.lynn-hero {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.lynn-title {
+  margin: 12vh 20vw;
+  h6 {
+    color: #928f8c;
+    font-size: 1.1rem;
+  }
+  hr {
+    width: 50%;
+    margin: 40vh auto;
+    border: 1px solid #928f8c;
+  }
+  p {
+    color: #785e4c;
+    font-size: 1rem;
+  }
+}
+
+.lynn-comments {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7f5eb;
+  padding: 12vh 20vw;
+  justify-content: space-between;
+  .comments-title {
+    color: var(--Brown, #ab927d);
+    width: 20%;
+    font-size: 1.1rem;
+  }
+  .comments-content {
+    display: flex;
+    max-width: 130vw;
+    // margin-left: 8vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // .comment1, .comment2, .mobile-none {
+    //   margin: 0 30px;
+    // }
+    .comment1 {
+      order: 1;
+      margin: 0 100px;
+    }
+    .comment2 {
+      order: 2;
+      align-self: flex-end;
+    }
+  }
+}
+
+.lynn-sample-section {
+  padding: 12vh 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    order: 1;
+    color: var(--Brown, #ab927d);
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 6vh;
+  }
+  .sample-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    order: 2;
+    img {
+      width: 250px;
+      height: auto;
+      margin: 2%;
+      flex-basis: 15%;
+    }
+  }
+}
+
+.lynn-start-customize {
+  width: 35%;
+  margin: 0 auto 12vw;
+  text-align: center;
+  h4 {
+    color: #e4ae44;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .start-text {
+    color: var(--primary-dark, #785e4c);
+    text-align: left;
+    margin: 6vh 2vw;
+  }
+  button {
+    border-radius: 5px;
+    background: #e6b759;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    font-weight: 700;
+    &:hover {
+      background: #e6a92f;
+    }
+  }
+}
+
+// size
+.lynn-custom-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  gap: 0;
+  max-width: 960px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lynn-choose-size {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin: 15vh 3vh;
+  .lynn-cake4,
+  .lynn-cake6,
+  .lynn-cake9 {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// deco
+.lynn-deco-preview {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.lynn-preview-cake {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 5vh 10vw;
+}
+.lynn-deco-selection {
+  width: 40%;
+  text-align: center;
+}
+.lynn-deco-selection > * {
+  margin: 5vh 0;
+}
+.lynn-done-select {
+  border: 0;
+  border-top: 1.5px solid #7d5f4d;
+}
+.lynn-deco-price {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #5e5e5e;
+  span {
+    margin: 0 3.5vw;
+  }
+}
+.lynn-deco-confirm {
+  display: flex;
+  justify-content: center;
+  gap: 0.8vw;
+  margin: 7vh 0;
+  button {
+    border-radius: 5px;
+    width: 8vw;
+    height: 5vh;
+    border: none;
+    font-weight: 550;
+    color: white;
+    font-size: 1.05rem;
+  }
+  .lynn-btn-grey {
+    background: #c0c0c0;
+    &:hover {
+      background: #959595;
+    }
+  }
+  .lynn-btn-brown {
+    background: #cebbaa;
+    &:hover {
+      background: #b4a394;
+    }
+  }
+}
+
+// cart
+.lynn-cart-selection {
+  width: 410px;
+}
+.lynn-cart-price-num {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  margin-bottom: 4vh;
+}
+.lynn-cart-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #5e5e5e;
+  span {
+    margin: 0 3.5vw;
+  }
+}
+.lynn-cart {
+  font-size: 22px;
+  color: var(--white);
+}
+
+@media (max-width: 400px) {
+  .lynn-addbutton {
+    width: 380px;
+  }
+  .lynn-cart-selection {
+    width: 390px;
+    padding: 0 30px;
+  }
+  //index
+  .lynn-hero {
+    height: 25vh;
+    object-fit: inherit;
+  }
+  .lynn-title {
+    margin: 8vh 15vw;
+    h6 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .lynn-comments {
+    padding: 8vh 0;
+    flex-direction: column;
+    position: relative;
+    height: 73vh;
+    .comments-title {
+      font-size: 1rem;
+      width: 100%;
+      width: fit-content;
+      margin: 0 auto 2vh;
+      text-align: left;
+    }
+    .comments-content {
+      flex-direction: column;
+      font-size: 0.9rem;
+      margin: 0;
+      .comment1 {
+        // align-self: flex-start;
+        // margin-bottom: 20px;
+        width: 45%;
+        margin: 0;
+        position: absolute;
+        top: 17vh;
+        left: 4vw;
+      }
+      .comment2 {
+        width: 45%;
+        position: absolute;
+        top: 35vh;
+        left: 52vw;
+      }
+      .mobile-none {
+        display: none;
+      }
+    }
+  }
+  .lynn-sample-section {
+    padding: 8vh 5vw;
+    p {
+      font-size: 1rem;
+      width: 90%;
+      margin-bottom: 4vh;
+      text-align: left;
+    }
+    .sample-img {
+      img {
+        width: 12vw;
+        margin: 1%;
+        flex-basis: 45%;
+      }
+    }
+  }
+  .lynn-start-customize {
+    width: 75%;
+    margin: 0 auto 8vh;
+    h4 {
+      font-size: 1.2rem;
+    }
+    .start-text {
+      font-size: 0.9rem;
+      margin: 4vh 2vw;
+    }
+    button {
+      width: 32vw;
+      height: 5vh;
+    }
+  }
+  // size
+  .lynn-choose-size {
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+    gap: 1.5rem;
+  }
+
+  // deco
+  .lynn-deco-preview {
+    flex-direction: column;
+    align-items: center;
+    // margin: 0 1vw;
+  }
+  .lynn-preview-section {
+    margin: 0;
+  }
+  .lynn-preview-cake {
+    margin: 0;
+  }
+  .lynn-deco-selection {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .lynn-deco-checkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .lynn-deco-price {
+    font-size: 1.1rem;
+  }
+  .lynn-deco-confirm {
+    margin: 5vh 0;
+    gap: 2.5vw;
+    button {
+      width: 32vw;
+      height: 4.5vh;
+      font-size: 0.9rem;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import '@/node_modules/bootstrap/scss/functions';
+
+@import '@/node_modules/bootstrap/scss/variables';
+.ps-3{
+    font-size: 1px;
+}
+
+
+.btn-info{
+    margin-left: 10px;
+    margin-right: 5px;
+        border-style:none; 
+       font-size:18px;
+       
+        color: white;
+        background-color: var(--light-brown);
+        width: 90px;
+        border-radius: 5px;
+        &:hover{
+            background-color: var(--brown);
+            } 
+}
+.class-date{
+    margin: 5px;
+  width: 80px;
+  font-size: 10px;
+  color: var(--primary-dark);
+ 
+  border-style:none;
+  
+}
+@media (min-width: 390px) {
+    // 日期1
+    .class-date{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+.cardImg{
+    border-radius: 5px;
+    object-fit: cover; 
+    width: 100%; /* 圖片寬度佔滿父元素 */
+    height: 366px;
+    
+    overflow: hidden;
+}
+.cardbody {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+}
+.cardtext1{
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 顯示的行數 */
+    -webkit-box-orient: vertical;
+    color: var(--primary-dark);
+    font-weight: bold;
+}
+
+
+
+

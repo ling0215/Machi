@@ -1,0 +1,33 @@
+.buttonActive {
+    background-color: white;
+    color: black;
+  }
+  
+  .intro {
+    // background-color: var(--secondary);
+    border: 1px solid var(--grey);
+    color: var(--primary-dark);
+    width: 50%;
+    height: 40px;
+    font-size: large;
+  }
+  
+  .other {
+    // background-color: var(--secondary);
+    border: 1px solid var(--grey);
+    color: var(--primary-dark);
+    width: 50%;
+    height: 40px;
+    font-size: large;
+  }
+  
+  .content {
+    width: 100%; 
+    border: 1px solid var(--grey);
+  }
+  
+  @media (max-width: 768px) {
+    .label {
+        flex-direction: column; 
+    }
+  }

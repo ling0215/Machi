@@ -1,0 +1,100 @@
+
+
+
+
+.card-body {
+  height: 140px;
+  padding: 0;
+}
+
+.custom-checkbox {
+  background: white;
+  color: #c0c0c0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c0c0c0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  // overflow: hidden;
+
+  border-radius: 3px;
+  &:hover{
+    border: 2px solid #969595;
+  }
+}
+.checkgood{
+  color: var(--light-brown);
+}
+
+.text-border-brown{
+  border-bottom: 1px solid #ab927d;  
+}
+
+.text-border-grey{
+  border-bottom: 1px solid #c0c0c0;  
+}
+.border-borwn{
+  border-bottom: 2px solid #ab927d;  
+}
+
+.addbuton{
+ border: 1px solid #ab927d;  
+ margin-bottom: 0;
+}
+
+.cart-button {
+  width: 192px;
+  background: #cebbaa;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: var(--primary-dark, #785e4c);
+  border-width: 0px;
+  padding: 10px 48px 10px 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  &:hover{
+    
+    background: #b4a394;
+  }
+}
+.cart-button-text {
+  color: var(--white, #ffffff);
+  text-align: left;
+
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.btn-outline-secondary {
+  :hover{
+    --bs-btn-hover-color: #ffffff;
+  }
+}
+
+.btn-count {
+  width: 128px;
+  height: 48px;
+  border: 1px solid #ab927d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+[
+  {
+    "cart_item_id": "1",
+    "user_id_fk": "4",
+    "product_id_fk": "10823",
+    "product_name": "鳳梨芒果起司塔",
+    "product_subtitle": "6吋",
+    "product_price": "620"
+
+  },
+  {
+    "cart_item_id": "2",
+    "user_id_fk": "4",
+    "product_id_fk": "10824",
+    "product_name": "春綠 ‧ 輕抹慕斯蛋糕",
+    "product_subtitle": "9吋",
+    "product_price": "2020"
+
+  }
+]
