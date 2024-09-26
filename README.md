@@ -18,7 +18,7 @@ npm i
 5. 新增權限帳號：admin 密碼：12345，全域權限√全選
 
 machi資料庫檔案:
-https://drive.google.com/file/d/1Rj1VHcPfk_M8fyCY0QuCLB061_gi_Nwg/view?usp=drive_link
+https://drive.google.com/file/d/1o5APixM3eyw97Rx-of0E4m4MWK58hsf5/view?usp=sharing
 
 ## Github提交流程
 可參考影片:  
